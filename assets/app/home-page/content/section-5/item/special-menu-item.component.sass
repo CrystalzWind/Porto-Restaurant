@@ -1,0 +1,42 @@
+@import "../../../../../../public/stylesheets/mixins"
+
+.menu-list
+  width: 100%
+  padding: 10px 0
+  img
+    padding: 0
+    width: 68px
+    height: 68px
+  .content
+    position: relative
+    height: 68px
+    margin-left: 20px
+
+    .date
+      +font(2.4em, $black-color, $georgia, 500, italic)
+      span
+        +font(0.6em, $black-color, $georgia, 400, italic)
+        margin-left: 10px
+
+    .description
+      position: relative
+      padding-top: 24px
+      &:before
+        border-bottom: 2px dotted #ddd
+        content: ""
+        height: 1px
+        left: 0%
+        position: absolute
+        bottom: 4px
+        width: 100%
+        z-index: 1
+      span
+        +font(1.8em, $block-quote, $georgia, null, italic)
+        background: white
+        position: relative
+        z-index: 2
+
+  .price
+    +font(2.2em, #2e353e, null, 900)
+    padding-top: 20px
+    padding-left: 20px

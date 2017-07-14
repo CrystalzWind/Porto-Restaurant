@@ -1,0 +1,9 @@
+li.menu-list.row
+  img.img-responsive.col-md-1(src="{{ dish.imagePath }}" alt="")
+  .content.col-md-10
+    .date
+      | {{ dish.date }}
+      span Special
+    .description
+      span {{ dish.description }}
+  p.price.col-md-1 {{dish.price}}

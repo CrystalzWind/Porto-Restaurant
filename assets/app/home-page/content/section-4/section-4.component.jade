@@ -1,0 +1,14 @@
+.container-fluid
+  .container
+    .row
+      #blog.col-md-6
+        section-heading([normal_text_1]="'Our'", [bold_text]="'Blog'",
+                        [des]="'Lorem ipsum dolor sit amet, consectetur adipiscing elit…'")
+        .blog-post
+          post-item(*ngFor="let item of postItems", [item]="item")
+
+      #team.col-md-6
+        section-heading([normal_text_1]="'Our'", [bold_text]="'Team'",
+                        [des]="'Lorem ipsum dolor sit amet, consectetur adipiscing elit…'")
+        .staff
+          member(*ngFor="let item of members", [member]="item")

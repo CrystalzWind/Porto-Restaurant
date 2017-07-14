@@ -1,0 +1,8 @@
+.container
+  .row
+    .tab.col-md-4.push-md-4
+      a([routerLink]="['./lunch']").tab-bills.col-md-4 Lunch
+      a([routerLink]="['./dinner']").tab-bills.col-md-4 Dinner
+      a([routerLink]="['./drinks']").tab-bills.col-md-4 Drinks
+  .row
+    router-outlet

@@ -1,0 +1,9 @@
+.col-md-4
+    .section_1-panel
+        img.panel-picture.img-responsive(src="{{ thumb.imagePath }}" alt="")
+        i: img.icon(src="{{thumb.icon}}" alt="")
+        h2 {{ thumb.caption }}
+        p {{ thumb.text}}
+        a
+            | View More
+            i.fa.fa-long-arrow-right

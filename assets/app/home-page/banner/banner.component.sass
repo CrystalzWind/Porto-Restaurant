@@ -1,0 +1,29 @@
+@import "../../../../public/stylesheets/mixins"
+
+.banner-content
+  height: 65em
+  position: relative
+  .banner
+    height: 65em
+    width: 100%
+    background: black url("./images/slide-restaurant-1.jpg") no-repeat center center
+  .intro
+    top: 24%
+    left: 13%
+    position: absolute
+    color: white
+    .greeting
+      +font(3em, null, $shadow, 100 )
+
+    .heading
+      text-transform: uppercase
+      +font(6em, null, null, 700 )
+
+    .sub-heading
+      +font(3.4em, null, null, 200 )
+      margin-bottom: 20px
+    a
+      background-color: $main-color
+      padding: 10px 20px
+      +font(1.4em, white, null, 400 )
+

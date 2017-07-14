@@ -1,0 +1,29 @@
+@import "../../../public/stylesheets/mixins"
+
+nav
+  padding: 20px 0
+  position: fixed
+  z-index: 10000
+  background-color: white
+  .logo
+    float: left
+    height: 50px
+    margin-left: 50px
+  .nav-bar
+    margin-right: 50px
+    float: right
+    li
+      padding: 10px
+      display: inline-block
+      &:active, &:hover
+        background-color: darken($main-color, 90%)
+        a
+          color: white
+      a
+        text-transform: uppercase
+        +font(1.3em, $black-color, null, 700)
+    .active
+      a
+        color: $main-color
+
+

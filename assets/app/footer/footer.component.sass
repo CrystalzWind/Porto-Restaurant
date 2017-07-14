@@ -1,0 +1,51 @@
+@import "../../../public/stylesheets/mixins"
+
+
+.social-links
+  background-color: $social-links-bgc
+  text-align: center
+  padding: 40px 0
+  margin: 0
+  li
+    display: inline-block
+    background-color: white
+    +rounded(100%)
+    width: 30px
+    height: 30px
+    padding-top: 9px
+    margin: 0 3px
+
+
+  .facebook
+    &:hover
+      background-color: $facebook-color
+
+  .twitter
+    &:hover
+      background-color: $twitter-color
+
+  .instagram
+    &:hover
+      background-color: $instagram-color
+
+  .linkedin
+    &:hover
+      background-color: $linkedin-color
+
+  .google
+    &:hover
+      background-color: $google-color
+
+footer
+  background-color: $footer-bgc
+  margin: 0
+  text-align: center
+  text-transform: uppercase
+  +font(1.5em, $footer-text-color, null)
+  padding: 50px 0
+  .separator
+    margin: 0 15px
+
+  a
+    &:hover
+      text-decoration: underline

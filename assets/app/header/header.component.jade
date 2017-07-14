@@ -1,0 +1,11 @@
+.container-fluid
+  header.row
+    nav.col-md-12
+      img(src="./images/logo-restaurant.png" alt="Restaurant Logo" class="img-responsive logo")
+      ul.nav-bar
+        li.active: a([routerLink]="['/home']") home
+        li: a([routerLink]="['/menu']") menu
+        li: a([routerLink]="['/about']") about
+        li: a([routerLink]="['/press']") press
+        li: a([routerLink]="['/contact']") contact
+

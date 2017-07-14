@@ -1,0 +1,7 @@
+.container
+  section-heading([normal_text_1]="'Special'", [bold_text]="'Menu'")
+  ul#menu-list
+    special-menu-item(*ngFor="let dish of SpecialMenuList", [dish]="dish")
+  .row
+      .col-md-12.button
+          a.btn-main Full Menu

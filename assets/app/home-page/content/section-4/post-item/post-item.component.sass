@@ -1,0 +1,26 @@
+@import "../../../../../../public/stylesheets/mixins"
+
+.post-item
+  background-color: white
+  margin: 10px 0
+  padding: 0
+  .post-img
+    padding: 0
+    margin: 0
+    img
+      padding: 0
+      margin: 0
+  .post-content
+    text-align: left
+    padding: 10px 0
+    .post-title
+      +font(1.8em, $black-color, null, 400)
+      padding-bottom: 10px
+      &:hover, &:active
+        text-decoration: underline
+    .post-except
+      +font(1.3em, $block-quote, null, null)
+    .read-more
+      +font(1.3em, $main-color, null, 200)
+      &:hover, &:active
+        text-decoration: underline

@@ -1,0 +1,52 @@
+@import "../../../../../public/stylesheets/mixins"
+
+.section_1-panel
+  border: 1px solid lightgray
+  position: relative
+  width: 100%
+  &:before
+    display: block
+    position: absolute
+    content: ''
+    width: 96%
+    height: 4px
+    left: 2%
+    top: 100%
+    border: 1px solid lightgray
+
+  &:after
+    display: block
+    position: absolute
+    content: ''
+    width: 94%
+    height: 4px
+    left: 3%
+    bottom: -7px
+    border: 1px solid lightgray
+
+  .panel-picture
+    width: 100%
+
+  .icon
+    display: block
+    margin: 0 auto
+    margin-top: -28px
+
+  h2
+    +font(3em, $gray-color, null)
+    text-align: center
+
+  p
+    text-align: center
+    padding-bottom: 30px
+
+  a
+    padding: 5px 10px
+    background-color: $main-color
+    +center
+    top: 100%
+    +font(1.4em, white, null)
+    z-index: 200
+    i
+      margin-left: 5px
+
